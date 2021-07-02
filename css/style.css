@@ -1,0 +1,270 @@
+body {
+	font-family: Nunito, sans-serif;
+	color:  #1c1c1c;
+}
+
+h1,h2,h3 {
+	font-family: Nunito, sans-serif;
+	color:  #000000;
+}
+
+.botao {
+	   color: #FFFFFF;
+	   text-decoration: none;
+	   padding: 10px 30px;
+	   background-color:#FF0000;
+	   font-size: .9em;
+	   border-radius: 3px;
+}
+
+
+
+
+/* Navegação */
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FF0000;
+}
+
+nav > a {
+
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 32px;
+            font-family: Yellowtail, serif;
+}
+
+nav ul {
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+nav ul li {
+
+             text-align: center;
+             width: 100%;
+}
+
+nav ul li a {
+
+            display: inline-block;
+            padding: 10px 0;
+            width: 100%;
+            text-decoration: none;
+            color: #FFFFFF;
+}
+
+
+/*Cabeçalho*/
+
+header {
+ 
+         display: flex;
+	     flex-direction: column;
+	     align-items: center;
+	     background-image: url("../img/gigao.jpg");
+	     background-size: cover;
+	     background-repeat: no-repeat;
+	     background-position: center;
+	     color: #FFFFFF;
+	     text-align: center;
+	     padding: 20px;
+}
+
+header h1{
+
+	 color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;
+
+}
+
+#Descoberta {
+        display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    text-align: center;
+	    padding: 10px 10px 20px 20px;
+	    background-color: #FF0000;
+	    color: #FFFFFF;
+}
+
+#Descoberta h2 {
+	 color: #FFFFFF;
+      }
+
+#Descoberta p {
+      margin-bottom: 2.5em;
+      max-width: 1000px;
+
+      }
+
+#Descoberta .botao {
+
+    background-color: #f1f1f1;
+    color: #1c1c1c;      
+ }
+
+/*Cidades que Atuamos*/
+
+#Classificação {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             padding: 30px;
+}
+
+#Classificação div {
+	         display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+             margin-top: 30px;
+}
+
+/*Projetos*/
+
+#Imagens {
+	       display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding-top: 20px;
+}
+
+#Imagens h2 {
+           margin-bottom: 20px;
+}
+
+#Imagens img {
+
+           width: 100%;
+}
+
+/*contato*/
+
+#Contato {
+
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           padding: 20px;
+}
+
+#Paleobiologia h2 {
+
+   color: #000000;
+}
+
+/*rodapé*/
+
+footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #FF0000;
+        color: #FFFFFF;
+}
+
+footer a {
+         text-decoration: none;
+         color: #000000;
+}
+
+@media screen and (min-width: 768px){
+
+
+  /*nav*/
+ 
+ nav {
+         flex-direction: row;
+         justify-content: space-around;
+
+ }
+
+ nav ul {
+
+         flex-direction: row;
+         width: 70%;
+
+
+ }
+
+ /*cabeçalho*/
+
+ header {
+         height: 600px;
+         height: 60vh;
+         justify-content: center ;
+ }
+
+ /*Descoberta*/
+
+ #Descoberta {
+          height: 250px;
+          height: 30vh;
+          justify-content: center;
+          min-height: 250px;
+ }
+
+ /*Classificação*/
+
+ #Classificação {
+               flex-direction: row;
+               flex-wrap: wrap;
+               align-items: flex-start;
+               max-width: 1000px;
+               margin: 0 auto;
+ }
+
+#Classificação h2 {
+                    text-align: center;
+                    width: 100%;
+}
+
+#Classificação div {
+                     flex-grow: 1;
+                     flex-basis: 150px;
+                     padding: 0 10px;
+}
+
+/*Projetos*/
+
+#Imagens {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#Imagens h2 {
+     width: 100%;
+     text-align: center;
+}
+
+/*contato*/
+
+#Paleobiologia {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+}
+
+#Paleobiologia h2, #Paleobiologia p {
+
+	    width: 100%;
+}
+
+}
+
